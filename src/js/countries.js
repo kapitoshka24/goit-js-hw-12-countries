@@ -6,6 +6,7 @@ import refs from "./refs";
 import { error, info, success } from "@pnotify/core";
 import "@pnotify/core/dist/PNotify.css";
 import "@pnotify/core/dist/BrightTheme.css";
+import { set } from "lodash";
 const debounce = require("lodash.debounce");
 
 const settings = {
@@ -52,6 +53,7 @@ function renderMarkup(data) {
   } else if (data.length <= 10) {
     refs.country.innerHTML = "";
     refs.countriesList.innerHTML = "";
+    refs.wrapper.style.display = "flex";
 
     refs.countriesList.insertAdjacentHTML(
       "beforeend",
