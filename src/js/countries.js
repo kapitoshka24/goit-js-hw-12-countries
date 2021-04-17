@@ -34,7 +34,6 @@ function onInputChange(event) {
 function renderMarkup(data) {
   const [country] = data;
   const countriesName = data.map((elem) => elem.name);
-  console.log(data);
 
   if (refs.input.value === "") {
     clearAll();
