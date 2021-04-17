@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/kapitoshka24/goit-js-hw-12-countries/issues"
   },
-  "homepage": "https://kapitoshka24.github.io/goit-js-hw-12-countries#readme",
+  "homepage": "https://kapitoshka24.github.io/goit-js-hw-12-countries",
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",

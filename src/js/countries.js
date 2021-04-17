@@ -21,12 +21,11 @@ const countriesApi = new CountriesApi();
 refs.input.addEventListener("input", debounce(onInputChange, 500));
 
 function onInputChange(event) {
-  console.log(event.target.value);
   countriesApi.query = event.target.value;
+
   countriesApi
     .fetchCountries()
     .then((data) => {
-      refs.loading.style.display = "none";
       renderMarkup(data);
     })
     .catch(catchError);
@@ -35,6 +34,7 @@ function onInputChange(event) {
 function renderMarkup(data) {
   const [country] = data;
   const countriesName = data.map((elem) => elem.name);
+  console.log(data);
 
   if (refs.input.value === "") {
     clearAll();
